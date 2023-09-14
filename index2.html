@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>site</title>
+
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .col-lg-3 {
+      border: #ccc 1px solid;
+    }
+
+    .col-lg-9 {
+      border: #ccc 1px solid;
+    }
+
+    .col-lg-12 {
+      border: #ccc 1px solid;
+    }
+
+    .col-lg-4 {
+      border: #ccc 1px solid;
+    }
+
+    .col-lg-6 {
+      border: #ccc 1px solid;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <nav class="navbar col-12  bg-dark navbar-expand-lg" data-bs-theme="dark" style="z-index: 999;">
+          <div class="container">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#">home</a>
+                <a class="nav-link" href="#produtos">curiosidade animal</a>
+                <a class="nav-link" href="#conteudo">conteúdo</a>
+                <a class="nav-link" href="#footer">direitos</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/onça.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/ouriço.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/pandinha.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+
+        <!--cards-->
+        <br>
+        <h2 id="produtos" class="text-center">curiosidade animal</h2>
+      </div>
+    </div>
+
+        <!--card 1-->
+       <br><div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
+          <div class="col">
+            <div class="card">
+              <img src="img/animais.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Espécies diferentes</h5>
+                <!-- inicio código modal 1-->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                 conhecer mais...
+                </button>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title fs-5" id="exampleModalLabel1">Aie-aie</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                  <img src="img/aie.jpg" class="card-img-top" alt="...">
+                  <p class="card-text"><br>O aie-aie é uma espécie curiosa de mamífero endêmico da ilha de Madagascar.
+                    Atualmente, está em perigo de extinção, razão infeliz pela qual ganhou maior visibilidade em todo o
+                    mundo.</p><br>
+
+                     <img src="img/mamaco.jpeg" class="card-img-top" alt="...">
+                  <p class="card-text"><br> Os macacos társios formam uma família peculiar de primatas pertencentes ao gênero Tarsius. Quando foram originalmente descobertos, foram catalogados como lêmures.
+                     Entretanto, atualmente, sabe-se que eles não estão relacionados com esses animais, e sim com os macacos.</p><br>
+
+                     <img src="img/rato pelado.jpeg" class="card-img-top" alt="...">
+                  <p class="card-text"><br>O rato-toupeira-pelado é uma espécie de roedor que habita as regiões áridas da África Oriental. 
+                    Eles vivem em colônias subterrâneas e são conhecidos por sua aparência peculiar.</p><br>
+
+                     <img src="img/peixinho.jpg" class="card-img-top" alt="...">
+                  <p class="card-text"><br> O axolote é nativo dos lagos Xochimilco e Chalco no México. Ele tem a rara capacidade 
+                    de regenerar suas guelras, cauda e até mesmo membros.</p><br>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fs-5" id="exampleModalLabel2">Rato Topeira</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="Modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <img src="img/rato-topeira-pelado-.jpeg" class="card-img-top" alt="...">
+          <p class="card-text">O rato-toupeira-nu ou rato-toupeira-pelado é um roedor da família Bathyergidae e a única
+            espécie do gênero Heterocephalus. Pode ser encontrado na Somália, Etiópia central e muito do norte e leste
+            do Quênia, estendendo-se ao sul até o Parque Nacional de Tsavo Ocidental e a cidade de Voi.</p>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="Modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <br>
+        <div id="conteudo" class="col-11 m-auto"></div>
+        <h2 class="text-center">meu conteudo</h2>
+        <p class="text-center">"Os animais pertencem ao Reino Animalia e podem ser definidos de maneira simplificada
+          como organismos eucariotos, multicelulares e heterotróficos. Acredita-se, com base no estudo de fósseis, que
+          esses organismos tenham surgido há cerca de 710 milhões de anos." </p>
+      </div>
+      <hr class="col-11 m-auto" />
+      <br>
+    </div>
+  </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <footer id="footer" class="page-footer p-5 col-12 m-auto" style="background-color: #333;">
+          <div class="text-center">
+            <a href="#">@2023 copyright: Garotas de programa</a>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
